@@ -41,13 +41,19 @@ function ReservationCard({ booking, onDelete }) {
           </h3>
           {isPast(new Date(startDate)) ? (
             <span
-              className={`flex h-7 items-center rounded-sm bg-yellow-800 px-3 text-xs font-bold uppercase text-yellow-200`}
+              className={`
+                flex h-7 items-center rounded-sm bg-yellow-800 px-3 text-xs font-bold uppercase
+                text-yellow-200
+              `}
             >
               past
             </span>
           ) : (
             <span
-              className={`flex h-7 items-center rounded-sm bg-green-800 px-3 text-xs font-bold uppercase text-green-200`}
+              className={`
+                flex h-7 items-center rounded-sm bg-green-800 px-3 text-xs font-bold uppercase
+                text-green-200
+              `}
             >
               upcoming
             </span>
@@ -80,10 +86,19 @@ function ReservationCard({ booking, onDelete }) {
             {" "}
             <Link
               href={`/account/reservations/edit/${id}`}
-              className={`group flex flex-grow items-center gap-2 border-b border-primary-800 px-3 text-xs font-bold uppercase text-primary-300 transition-colors hover:bg-accent-600 hover:text-primary-900`}
+              className={`
+                group flex flex-grow items-center gap-2 border-b border-primary-800 px-3 text-xs
+                font-bold uppercase text-primary-300 transition-colors
+
+                hover:bg-accent-600 hover:text-primary-900
+              `}
             >
               <PencilSquareIcon
-                className={`h-5 w-5 text-primary-600 transition-colors group-hover:text-primary-800`}
+                className={`
+                  h-5 w-5 text-primary-600 transition-colors
+
+                  group-hover:text-primary-800
+                `}
               />
               <span className="mt-1">Edit</span>
             </Link>
